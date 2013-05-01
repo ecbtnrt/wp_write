@@ -140,7 +140,10 @@ $('#getcat').click(function() {
 		var blogId = 0;
 		var wp = new WordPress(connection.url, connection.username, connection.password);
 		var reply = wp.getTerms(blogId, 'category');
-		if (!(reply instanceof Array)) Apprise("ERROR: " + reply.faultString.toString());
+		if (!(reply instanceof Array)) {
+			Apprise("ERROR: " + reply.faultString.toString());
+			$('#getcat').val("Load Categories");
+		}
 		else {
 			$('#catlist').html('');
 			$('#getcat').val("Load Categories");

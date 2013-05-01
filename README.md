@@ -21,7 +21,7 @@ Some components of this application are copyrighted/licensed by their respective
 
 * 'Open Sans' font (Apache License) http://www.google.com/fonts/#UsePlace:use/Collection:Open+Sans
 * TinyMCE: http://www.tinymce.com/ (http://www.tinymce.com/js/tinymce/jscripts/tiny_mce/license.txt)
-* WordPress XmlRpc Javascript Api: https://github.com/developerworks/wordpress-xmlrpc-javascript-api
+* WordPress XML-RPC JavaScript API: https://github.com/developerworks/wordpress-xmlrpc-javascript-api
 * AppRise by @ThrivingKings http://thrivingkings.com/read/Apprise-The-attractive-alert-alternative-for-jQuery
 * Icon by Victor Erixon - http://victorerixon.com/ (http://www.iconfinder.com/icondetails/106210/128/compose_icon)
 
