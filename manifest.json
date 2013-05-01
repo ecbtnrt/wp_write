@@ -1,0 +1,28 @@
+{
+   "manifest_version": 2,
+   "name": "WP Write",
+   "description": "Simple blogging client for WordPress blogs.",
+   "offline_enabled": true,
+   "permissions": ["storage" ],
+   "version": "0.28",
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "options_page": "options.html",
+   "homepage_url": "http://wpwrite.arpitnext.com/",
+   "permissions": [ "tabs", "\u003Call_urls\u003E" ],
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+	"default_icon": {
+		"19": "css/19.png",
+		"38": "css/38.png"
+	},
+	"default_title": "WP Write"
+	},
+   "icons": {
+      "128": "css/128.png",
+      "16": "css/16.png",
+      "48": "css/48.png"
+	}
+}

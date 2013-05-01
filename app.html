@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<script type="text/javascript" src="tinymce/tinymce.min.js"></script>
+		<script type="text/javascript" src="js/jq2.js"></script>
+		<script type="text/javascript" src="js/init.js"></script>
+		<script type="text/javascript" src="js/mimic.js"></script>
+		<script type="text/javascript" src="js/apprise.js"></script>
+		<script type="text/javascript" src="js/wordpress.js"></script>
+		<title>WP Write</title>
+		<link rel="stylesheet" href="css/css.css">
+		<link rel="icon" href="css/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<input name="title" id="title" type="text" size="50" placeholder=" Post title . . ."/><br/>
+		<textarea name="content" id="content" class="editme" style="width:100%"></textarea>
+		<div id="control">
+			<input type="button" id="postbutton" value="Post" />
+			<input type="button" id="savebutton" value="Save Draft" />
+			<input type="button" id="rebutton" value="Restore Draft" />
+			<input type="button" id="savepost" value="Save As HTML" /><span id="dwnldlink"></span>
+			<input type="button" id="postset" value="Post Settings" />
+			<input type="button" id="prefbutton" value="Blog Settings" />
+		</div>
+		<div id="advanced">
+			<div id="tagdiv">
+				<input type="button" value="Tags" disabled="disabled" /> &nbsp; <input type="text" size="52" name="tags" id="tags" placeholder=" enter tags, separated by comma" />
+			</div>
+			<div id="excerptdiv">
+				<input type="button" value="Excerpt" disabled="disabled" /> &nbsp; <input type="text" size="50" name="excerpt" id="excerpt" placeholder=" post excerpt, optional" />
+			</div>
+			<div id="categories">
+				<input type="button" id="getcat" value="Load Categories" /><span id="catlist"></span>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

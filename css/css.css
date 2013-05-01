@@ -1,0 +1,67 @@
+@font-face {font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: local('Open Sans'), local('OpenSans'), url(/css/OpenSans.woff) format('woff');}
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  width: 75%;
+  margin: 30px 0 30px 50px;
+}
+
+input, button, textarea {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+table {
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	float: left; 
+	width: 600px;
+}
+
+#footer {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#footer a , a:visited {
+	text-decoration:none;
+	color: blue;
+}
+
+
+
+/* for buttons */
+
+#control ul {
+	display:block;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+#control ul li {
+	background:none;
+	float:left;
+	margin:0;
+	padding-right:4px;
+}
+
+#control ul li a {
+	text-decoration:none;
+}
+
+#control {
+	vertical-align:bottom;
+	margin-top:12px;
+}
+
+#advanced {
+	margin: 20px 0 10px 0;
+}
+
+/* apprise v2 */
+.apprise-overlay{background-color:#fff;display:none;height:100%;left:0;position:fixed;top:0;width:100%}div.apprise{background:#fff;border:1px solid #aaa;box-shadow:0 2px 15px rgba(0,0,0,0.2);-mox-box-shadow:0 2px 15px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 15px rgba(0,0,0,0.2);color:#111;display:none;font-family:Arial,sans-serif;font-size:14px;left:40%;max-height:90%;overflow:hidden;position:fixed;top:-100%;width:20%}div.apprise .apprise-inner{padding:20px}div.apprise .apprise-input{margin-top:10px;padding:10px 0}div.apprise .apprise-input input{border:1px solid rgba(0,0,0,0.3);border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;box-shadow:inset 0 0 5px rgba(0,0,0,0.1);-mox-box-shadow:inset 0 0 5px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0 0 5px rgba(0,0,0,0.1);display:block;font-size:13px;margin:0 auto;padding:5px 10px;width:90%}div.apprise .apprise-input input:focus{border-color:#01aef0;outline:0}div.apprise .apprise-buttons{background:#eee;border-top:1px solid #aaa;box-shadow:inset 0 1px 0 #fff;-moz-box-shadow:inset 0 1px 0 #fff;-webkit-box-shadow:inset 0 1px 0 #fff;padding:10px 20px;text-align:right}div.apprise .apprise-buttons button{background:#ededed;border:1px solid rgba(0,0,0,0.5);border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);-mox-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);cursor:pointer;font-size:13px;margin:0 2px;overflow:hidden;padding:5px 12px;text-shadow:0 1px 0 rgba(255,255,255,0.8)}div.apprise .apprise-buttons button.blue{background:#01aef0}div.apprise .apprise-buttons button.red{background:#d23a30}div.apprise .apprise-buttons button.blue,div.apprise .apprise-buttons button.red{color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.4)}div.apprise .apprise-buttons button:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,0.5),0px 1px 3px rgba(0,0,0,0.4);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5),0px 1px 3px rgba(0,0,0,0.4);-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5),0px 1px 3px rgba(0,0,0,0.4)}div.apprise .apprise-buttons button:active{box-shadow:inset 0 1px 2px rgba(0,0,0,0.5),0px 1px 0 rgba(255,255,255,0.8);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.5),0px 1px 0 rgba(255,255,255,0.8);-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.5),0px 1px 0 rgba(255,255,255,0.8)}
