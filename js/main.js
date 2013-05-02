@@ -191,4 +191,50 @@ $('#excerpt').change(function(){
 	excerpt = this.value;
 });
 
+// post draft action
+$('#draftbutton').click(function() {
+	if(!navigator.onLine) Apprise("ERROR: You are offline.");
+	else {
+	var mypass = prompt("Enter your password:");
+	if(mypass) {
+		$('#draftbutton').val("Connection Error. Retry?");
+		var connection = {
+			url : rpcurl,
+			username : userid,
+			password : mypass
+		};
+		var blogId = 0;
+		var title = $('#title').val();
+		var article = $('#content_ifr').contents().find('body').html();
+		article = htmlEscape(article);
+		var categories = {
+			category: catArray
+		};
+		var tags = {
+			post_tag: tagArray
+		};
+		var data = {
+			post_type: 'post',
+			post_title: title,
+			post_excerpt: excerpt,
+			post_content: article,
+			post_format: '',
+			post_status: 'draft',
+			terms: categories,
+			terms_names: tags
+		};
+		var wp = new WordPress(connection.url, connection.username, connection.password);
+		var reply = wp.newPost(blogId, data);
+		if (!(reply instanceof String)) { Apprise("ERROR: " + reply.faultString.toString()); }
+		if (reply instanceof String) {
+			$('#draftbutton').val("Post Draft");
+			Apprise("Draft saved on server.");
+		}
+		else {
+			$('#draftbutton').val("Post Draft");
+		}
+	}
+	}
+});
+
 });

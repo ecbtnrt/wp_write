@@ -4,7 +4,7 @@
    "description": "Simple blogging client for WordPress blogs.",
    "offline_enabled": true,
    "permissions": ["storage" ],
-   "version": "0.28",
+   "version": "0.29",
    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
    "options_page": "options.html",
    "homepage_url": "http://wpwrite.arpitnext.com/",
