@@ -1,7 +1,6 @@
 # WP Write
 
-Chrome Extension for WordPress sites. Supports WordPress.com and Self hosted sites. Uses XML-RPC API.  
-Allows users to publish posts directly from the Chrome.  
+Chrome extension for WordPress sites. It supports WordPress.com blogs and self-hosted WordPress sites. Enables users to publish posts directly from the Chrome. Uses XML-RPC API.  
 
 ## Developer Info
 Developed by Arpit Kumar (Contact: arpitnext@gmail.com, Twitter: @ArpitNext).
