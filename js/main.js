@@ -10,6 +10,7 @@ function htmlEscape(str) {
 var blogname = localStorage.getItem('blogname');
 var catArray = [];
 var tagArray = [];
+var slug = "";
 var excerpt = "";
 var rpcurl = localStorage.getItem('rpcurl');
 var userid = localStorage.getItem('username');
@@ -70,7 +71,8 @@ $('#postbutton').click(function() {
 			post_format: '',
 			post_status: 'publish',
 			terms: categories,
-			terms_names: tags
+			terms_names: tags,
+			post_name: slug
 		};
 		var wp = new WordPress(connection.url, connection.username, connection.password);
 		var reply = wp.newPost(blogId, data);
@@ -189,6 +191,11 @@ $('#tags').change(function(){
 // for excerpt
 $('#excerpt').change(function(){
 	excerpt = this.value;
+});
+
+// for slug
+$('#slug').change(function(){
+	slug = this.value;
 });
 
 // post draft action
