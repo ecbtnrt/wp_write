@@ -7,19 +7,19 @@ function htmlEscape(str) {
             .replace(/</g, '&lt;')
             .replace(/>/g, '&gt;');
 }
-var blogname = localStorage.getItem('blogname');
+
 var catArray = [];
 var tagArray = [];
 var slug = "";
 var excerpt = "";
 var rpcurl = localStorage.getItem('rpcurl');
 var userid = localStorage.getItem('username');
-if(!(blogname && rpcurl && userid)) { // right condition?
+if(!(  rpcurl && userid)) { // right condition?
 	alert("Setup your blog first");
 	window.location.href = "options.html";
 }
 
-$('#prefbutton').val(blogname + " Settings");
+
 $('#advanced').hide();
 
 $(window).load(function(){
